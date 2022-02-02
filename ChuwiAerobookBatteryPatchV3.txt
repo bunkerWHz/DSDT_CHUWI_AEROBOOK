@@ -95,19 +95,19 @@ Method (_BIF, 0, NotSerialized)  // _BIF: Battery Information \n
 {\n
     Name (BPKG, Package (0x0D)\n
     {\n
-        Zero, \n
         Ones, \n
-        Ones, \n
-        One, \n
-        Ones, \n
-        Zero, \n
-        Zero, \n
-        0x64, \n
-        Zero, \n
-        "SR Real Battery", \n
-        "123456789", \n
-        "Real", \n
-        "Intel SR 1"\n
+	0x157C, \n
+	0x157C, \n
+	Zero, \n
+	0x1CE8, \n
+	0x044C, \n
+	0x044C, \n
+	0x64, \n
+	0x64, \n
+	"SR Real Battery", \n
+	"123456789", \n
+	"Real", \n
+	"Intel SR 1"\n
     })\n
     Local0 = B1B2(FV10, FV11)\n
     Local1 = ((B1B2(DC10, DC11) * Local0) / 0x03E8)\n
